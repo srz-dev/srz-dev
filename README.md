@@ -24,15 +24,6 @@
 
 ### 🚀 Featured Projects
 
-<p align="center">
-  <a href="https://github.com/srz-dev/Smart-helmet-SOS">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=srz-dev&repo=Smart-helmet-SOS&bg_color=000000&title_color=39FF14&text_color=39FF14&icon_color=39FF14&border_color=39FF14" />
-  </a>
-  <a href="https://github.com/srz-dev/SNAKE-GAME-ESP32-TFT-DISPLAY-PUSH_BUTTON">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=srz-dev&repo=SNAKE-GAME-ESP32-TFT-DISPLAY-PUSH_BUTTON&bg_color=000000&title_color=39FF14&text_color=39FF14&icon_color=39FF14&border_color=39FF14" />
-  </a>
-</p>
-
 - 🪖 **[Smart-helmet-SOS](https://github.com/srz-dev/Smart-helmet-SOS)** — A hardware-based impact detection and emergency alert system using MPU6050 and a buzzer for real-time rider safety.
 - 🐍 **[Snake Game on ESP32](https://github.com/srz-dev/SNAKE-GAME-ESP32-TFT-DISPLAY-PUSH_BUTTON)** — A classic Snake game built from scratch on an ESP32 with a TFT display and push-button controls.
 
@@ -82,7 +73,7 @@
 ### 📫 Connect with Me
 
 <div align="left">
-  <a href="https://instagram.com/YOUR_HANDLE"><img src="https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=39FF14" style="margin-right:8px;" /></a>
-  <a href="https://linkedin.com/in/YOUR_HANDLE"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=39FF14" style="margin-right:8px;" /></a>
-  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=39FF14" style="margin-right:8px;" /></a>
+  <a href="https://www.instagram.com/shrishh.m/"><img src="https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=39FF14" style="margin-right:8px;" /></a>
+  <a href="https://www.linkedin.com/in/shrish-m-403254366/"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=39FF14" style="margin-right:8px;" /></a>
+  <a href="mailto:shrishmuraleedharan26@gmail.com"><img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=39FF14" style="margin-right:8px;" /></a>
 </div>
