@@ -1,0 +1,101 @@
+<svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="55%" stop-color="#00040d"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+
+    <radialGradient id="sun" cx="50%" cy="100%" r="75%">
+      <stop offset="0%" stop-color="#4fd8ff" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#0066ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0066ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5fd4ff"/>
+      <stop offset="50%" stop-color="#2e8fff"/>
+      <stop offset="100%" stop-color="#5fd4ff"/>
+    </linearGradient>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="frame">
+      <rect x="0" y="0" width="900" height="220" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="900" height="220" fill="url(#bg)"/>
+
+    <!-- glow horizon -->
+    <ellipse cx="450" cy="150" rx="420" ry="140" fill="url(#sun)"/>
+
+    <!-- horizon line -->
+    <line x1="0" y1="150" x2="900" y2="150" stroke="#5fd4ff" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- perspective grid, scrolling loop -->
+    <g stroke="#2e8fff" stroke-width="1.2" opacity="0.55">
+      <!-- converging verticals -->
+      <line x1="450" y1="150" x2="60"  y2="220"/>
+      <line x1="450" y1="150" x2="160" y2="220"/>
+      <line x1="450" y1="150" x2="260" y2="220"/>
+      <line x1="450" y1="150" x2="360" y2="220"/>
+      <line x1="450" y1="150" x2="450" y2="220"/>
+      <line x1="450" y1="150" x2="540" y2="220"/>
+      <line x1="450" y1="150" x2="640" y2="220"/>
+      <line x1="450" y1="150" x2="740" y2="220"/>
+      <line x1="450" y1="150" x2="840" y2="220"/>
+
+      <!-- scrolling horizontals -->
+      <g id="hlines">
+        <line x1="0" y1="150" x2="900" y2="150"/>
+        <line x1="20" y1="163" x2="880" y2="163"/>
+        <line x1="45" y1="178" x2="855" y2="178"/>
+        <line x1="75" y1="196" x2="825" y2="196"/>
+        <line x1="110" y1="220" x2="790" y2="220"/>
+      </g>
+      <use href="#hlines" transform="translate(0,0)">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 0,18" dur="0.9s" repeatCount="indefinite"/>
+      </use>
+    </g>
+
+    <!-- scanlines -->
+    <g opacity="0.12">
+      <rect x="0" y="0" width="900" height="220" fill="url(#scan)"/>
+    </g>
+    <pattern id="scanPattern" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000"/>
+      <rect y="2" width="4" height="2" fill="#5fd4ff" opacity="0.06"/>
+    </pattern>
+    <rect width="900" height="220" fill="url(#scanPattern)"/>
+
+    <!-- title text -->
+    <text x="450" y="95" text-anchor="middle" font-family="Courier New, monospace"
+          font-size="46" font-weight="bold" fill="url(#neon)" filter="url(#glow)"
+          letter-spacing="4">
+      &gt; SRZ-DEV_
+      <animate attributeName="opacity" values="1;0.85;1;1;0.75;1" dur="2.4s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- subtitle -->
+    <text x="450" y="125" text-anchor="middle" font-family="Courier New, monospace"
+          font-size="15" fill="#5fd4ff" opacity="0.85" letter-spacing="2">
+      EMBEDDED SYSTEMS // HARDWARE // C++
+    </text>
+
+    <!-- blinking cursor block -->
+    <rect x="608" y="70" width="14" height="30" fill="#5fd4ff">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect x="1" y="1" width="898" height="218" rx="10" fill="none" stroke="#2e8fff" stroke-width="2" opacity="0.7"/>
+</svg>
