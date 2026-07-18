@@ -1,3 +1,4 @@
+<center>
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -41,7 +42,7 @@
 </td>
 </tr>
 </table>
-
+</center>
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=16&pause=1000&color=39FF14&background=000000&center=true&vCenter=true&width=600&lines=not+the+imposter...+probably+%F0%9F%8E%AD;ECE+undergrad+%7C+tech+enthusiast;Building+hardware+that+talks+back+%E2%9A%A1;Turning+%E2%98%95+into+circuits" alt="Typing SVG" />
 </p>
